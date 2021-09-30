@@ -3,17 +3,19 @@
 
 # In[3]:
 import streamlit as st
+import numpy
+import pandas
 
 st.title('Welcome to my first app')
 
 
 # shop_car = []#用来存放购买的商品
-st.write(goods = {
+goods = {
     1:['iPhone',2500],
     2:['パソコン',3500],
     3:['自転車',4500],
     4:['BMW',20000]
-})#商品列表
+}#商品列表
 while True:
     salary = input("お金はどれくらい持っていますか？") # 输入有多少钱
     if salary.isdigit(): # 判断是否为整数
